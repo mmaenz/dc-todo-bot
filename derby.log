@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Sun Sep 12 21:16:25 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017b-db70-73a3-00003e1e9480 
+on database directory memory:D:\Projects\dc-todo-bot\67632184-08a6-4933-b5f3-9cc0fb439e43 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 
+Loaded from file:/C:/Users/mmaenz/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Eclipse Foundation
+java.runtime.version=11.0.12+7
+user.dir=D:\Projects\dc-todo-bot
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Sep 12 21:16:25 CEST 2021:
+Shutting down instance a816c00e-017b-db70-73a3-00003e1e9480 on database directory memory:D:\Projects\dc-todo-bot\67632184-08a6-4933-b5f3-9cc0fb439e43 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 
