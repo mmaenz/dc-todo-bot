@@ -22,7 +22,7 @@ public class DcBotApplication {
             .run(args);
 
         //Login
-        DiscordClientBuilder.create("ODg3MDI5NDEwNTc2ODY3MzQw.YT-Mgw.0OUFx3ojMCL-uj83sAXIaXHHofE").build()
+        DiscordClientBuilder.create(System.getenv("BOT_TOKEN")).build()
             .withGateway(gatewayClient -> {
                 SlashCommandListener slashCommandListener = new SlashCommandListener(springContext);
 
@@ -35,6 +35,6 @@ public class DcBotApplication {
 
     @Bean
     public RestClient discordRestClient() {
-        return RestClient.create("ODg3MDI5NDEwNTc2ODY3MzQw.YT-Mgw.0OUFx3ojMCL-uj83sAXIaXHHofE");
+        return RestClient.create(System.getenv("BOT_TOKEN"));
     }
 }
