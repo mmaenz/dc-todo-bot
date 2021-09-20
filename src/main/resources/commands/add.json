@@ -1,0 +1,30 @@
+{
+    "name": "add",
+    "description": "Add item to todo list",
+    "options": [
+        {
+            "name": "name",
+            "description": "Name of item (no spaces)",
+            "type": 3,
+            "required": true
+        },
+        { 
+            "name": "interval",
+            "description": "Refresh interval (m/h, 1440m = 24h)",
+            "type": 3,
+            "required": true
+        },
+        { 
+            "name": "item",
+            "description": "Item (as json notation)",
+            "type": 3,
+            "required": true
+        },
+        { 
+            "name": "amount",
+            "description": "Amount",
+            "type": 4,
+            "required": true
+        }
+    ]
+}

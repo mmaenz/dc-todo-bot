@@ -14,6 +14,7 @@ import reactor.core.publisher.Mono;
 
 @SpringBootApplication
 public class DcBotApplication {
+	private static String BOT_TOKEN = System.getenv("BOT_TOKEN");
 	
     public static void main(String[] args) {
         //Start spring application
@@ -22,7 +23,7 @@ public class DcBotApplication {
             .run(args);
 
         //Login
-        DiscordClientBuilder.create(System.getenv("BOT_TOKEN")).build()
+        DiscordClientBuilder.create(BOT_TOKEN).build()
             .withGateway(gatewayClient -> {
                 SlashCommandListener slashCommandListener = new SlashCommandListener(springContext);
 
@@ -35,6 +36,6 @@ public class DcBotApplication {
 
     @Bean
     public RestClient discordRestClient() {
-        return RestClient.create(System.getenv("BOT_TOKEN"));
+        return RestClient.create(BOT_TOKEN);
     }
 }

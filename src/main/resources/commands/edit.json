@@ -1,0 +1,12 @@
+{
+    "name": "edit",
+    "description": "Edit item of todo list",
+    "options": [
+        {
+            "name": "name",
+            "description": "Name of item (no spaces)",
+            "type": 3,
+            "required": true
+        }
+    ]
+}
